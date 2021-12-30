@@ -10,27 +10,31 @@ the following microservices:
 * Users: [github](https://github.com/RSO-cloud-native-application/uniborrow-users)
 * Items: [github](https://github.com/RSO-cloud-native-application/uniborrow-items)
 * Loans: [github](https://github.com/RSO-cloud-native-application/uniborrow-loans)
+* Requests: [github](https://github.com/RSO-cloud-native-application/uniborrow-requests)
+* Chat: [github](https://github.com/RSO-cloud-native-application/uniborrow-chat)
+* Cash: [github](https://github.com/RSO-cloud-native-application/uniborrow-cash)
+* Reviews: [github](https://github.com/RSO-cloud-native-application/uniborrow-reviews)
 
+
+Frontend source code is located on
+[github](https://github.com/RSO-cloud-native-application/uniborrow-frontend).
 
 The application is deployed on Google Cloud, using Kubernetes to
 orchestrate the deployment.
 
 ## Development information
 
-### Consul K8S setup
+### Etcd K8S setup
 
-The consul servers are running on the kubernetes cluster. You can see
-the pods used by Consul with:
+The etcd server is running on the kubernetes cluster. You can see the
+pods used by etcd with:
 
 ```
 $ kubectl get pods
 ```
 
-To connect to the Consul CLI, execute:
+To connect to the etcd CLI, execute:
 
 ```
 $ kubectl exec <pod-name> -it /bin/sh
 ```
-
-Currently the pod name is `consul-consul-server-0`. The UI is
-currently not exposed via the load balancer.
