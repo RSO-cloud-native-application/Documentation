@@ -38,3 +38,27 @@ To connect to the etcd CLI, execute:
 ```
 $ kubectl exec <pod-name> -it /bin/sh
 ```
+
+To create a key:
+
+```
+etcdctl mk <key-name> <key-value>
+```
+
+To modify a key:
+
+```
+etcdctl set <key-name> <key-value>
+```
+
+To retrieve a key:
+
+```
+etcdctl get <key-name> <key-value>
+```
+
+To see the directory structure
+
+```
+etcdctl ls <key-name>
+```
