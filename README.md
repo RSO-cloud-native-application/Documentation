@@ -14,7 +14,8 @@ the following microservices:
 * Chat: [github](https://github.com/RSO-cloud-native-application/uniborrow-chat)
 * Cash: [github](https://github.com/RSO-cloud-native-application/uniborrow-cash)
 * Reviews: [github](https://github.com/RSO-cloud-native-application/uniborrow-reviews)
-
+* Blogs: [github](https://github.com/RSO-cloud-native-application/uniborrow-blogs)
+* Ads: [github](https://github.com/RSO-cloud-native-application/uniborrow-ads)
 
 Frontend source code is located on
 [github](https://github.com/RSO-cloud-native-application/uniborrow-frontend).
